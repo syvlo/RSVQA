@@ -1,5 +1,5 @@
 # RSVQA Code
-This readme presents the step required to generate the databases and reproduce the results presented in RSVQA: Visual Question Answering for Remote Sensing Data, S. Lobry, D. Marcos, J. Murray and D. Tuia.
+This readme presents the step required to generate the databases and reproduce the results presented in [1]. Please cite this article if you use this code.
 
 ## Automatic generation of the DB:
 The automatic generation of the databases is handled by the scripts in the AutomaticDB folder, and can be launched with the process.py script.
@@ -25,5 +25,8 @@ You will need, in addition to the packages found in requirements.txt, to install
 Available here:
 https://github.com/Cadene/skip-thoughts.torch/tree/master/pytorch
 
-## Thanks
+# Thanks
 The authors would like to thank Rafael Félix for his remarks and the requirements.txt file.
+
+# References
+[1] Lobry, Sylvain, et al. "RSVQA: Visual question answering for remote sensing data." IEEE Transactions on Geoscience and Remote Sensing 58.12 (2020): 8555-8566.

@@ -1,0 +1,14 @@
+#conda create --name rsvqa python==3.7
+numpy
+matplotlib
+scikit-image
+scikit-learn
+pickles
+torchvision
+#skipthoughts
+
+#git clone https://github.com/Cadene/skip-thoughts.torch.git
+#cd skip-thoughts.torch/pytorch
+#python setup.py install
+#https://github.com/Cadene/skip-thoughts.torch/tree/master/pytorch
+

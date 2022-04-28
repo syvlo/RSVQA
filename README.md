@@ -25,6 +25,8 @@ You will need, in addition to the packages found in requirements.txt, to install
 Available here:
 https://github.com/Cadene/skip-thoughts.torch/tree/master/pytorch
 
+In addition, you need to copy seq2vec.py in the "models" folder. You can find seq2vec.py here: https://github.com/Cadene/vqa.pytorch/blob/master/vqa/models/seq2vec.py
+
 # Thanks
 The authors would like to thank Rafael Félix for his remarks and the requirements.txt file.
 

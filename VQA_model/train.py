@@ -9,7 +9,7 @@
 import matplotlib
 matplotlib.use('Agg')
 
-from models import MCBModel, model
+from models import model
 import VQALoader
 import VocabEncoder
 import torchvision.transforms as T
@@ -185,10 +185,7 @@ if __name__ == '__main__':
     validate_dataset = VQALoader.VQALoader(images_path, imagesvalJSON, questionsvalJSON, answersvalJSON, encoder_questions, encoder_answers, train=False, ratio_images_to_use=ratio_images_to_use, transform=transform, patch_size = patch_size)
     
     
-    if modeltype == 'MCB':
-        RSVQA = MCBModel.VQAModel(encoder_questions.getVocab(), encoder_answers.getVocab()).cuda()
-    else:
-        RSVQA = model.VQAModel(encoder_questions.getVocab(), encoder_answers.getVocab(), input_size = patch_size).cuda()
+    RSVQA = model.VQAModel(encoder_questions.getVocab(), encoder_answers.getVocab(), input_size = patch_size).cuda()
     RSVQA = train(RSVQA, train_dataset, validate_dataset, batch_size, num_epochs, learning_rate, modeltype, Dataset)
     
     
